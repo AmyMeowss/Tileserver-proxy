@@ -16,6 +16,10 @@ if (!fs.existsSync(CacheDir)) {
 const TILESERVER_URL = 'http://localhost:8080';
 const TILESERVER_STYLE = 'liberty';
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+})
+
 app.get('/tiles/:z/:x/:y.png', async (req, res) => {
 
     let { z, x, y } = req.params;
