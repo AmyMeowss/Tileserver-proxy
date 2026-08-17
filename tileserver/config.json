@@ -1,0 +1,31 @@
+{
+  "options": {
+    "paths": {
+      "mbtiles": "",
+      "styles": "styles"
+    },
+    "maxScaleFactor": 1,
+    "maxSize": 256,
+    "pbfAlias": "pbf",
+    "serveAllFonts": true,
+    "serveAllStyles": true,
+    "serveStaticMaps": true,
+    "allowRemoteMarkerIcons": true,
+    "allowInlineMarkerImages": true,
+    "staticAttributionText": "© 288tiles | © OpenMapTiles | © OpenStreetMap",
+    "tileMargin": 0,
+    "minRendererPoolSizes": [
+      0
+    ],
+    "maxRendererPoolSizes": [
+      1
+    ]
+  },
+  "styles": {
+    "liberty": {
+      "style": "liberty.json",
+      "serve_rendered": true,
+      "serve_data": true
+    }
+  }
+}

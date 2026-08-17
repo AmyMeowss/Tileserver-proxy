@@ -1,0 +1,24 @@
+{
+  "name": "tileserver",
+  "version": "1.0.0",
+  "description": "MeowssTileServer (MTS)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmyMeowss/Tileserver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AmyMeowss/Tileserver/issues"
+  },
+  "homepage": "https://github.com/AmyMeowss/Tileserver#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

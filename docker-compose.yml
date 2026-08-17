@@ -1,0 +1,16 @@
+name: TMS
+services:
+    tileserver:
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./tileserver:/data
+        ports:
+            - 127.0.0.1:8080:8080
+        image: maptiler/tileserver-gl
+        command: --config /data/config.json --verbose
+        restart: always
+        environment:
+            - NODE_ENV="production"
+            - NODE_OPTIONS="--max-old-space-size=16384"
+            - UV_THREADPOOL_SIZE=32o
